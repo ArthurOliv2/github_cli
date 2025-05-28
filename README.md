@@ -1,4 +1,4 @@
-# GitHub Activity CLI
+# GitHub CLI
 
 Uma ferramenta simples de linha de comando para visualizar a atividade recente de um usuário do GitHub.
 
