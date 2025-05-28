@@ -35,4 +35,12 @@ def parse_activity(events):
 
 
 if __name__ == "__main__":
-    print("Bem-vindo à Github_CLI! Use: github-cli <username>")
+    if len(sys.argv) != 2:
+        print("Uso: github-activity <username>")
+    else:
+        username = sys.argv[1]
+        events = fetch_github_CLI(username)
+        if events:
+            parse_activity(events)
+        else:
+            print("Erro ao buscar atividade do usuário. Verifique o nome e tente novamente.")
